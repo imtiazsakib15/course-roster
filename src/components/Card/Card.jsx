@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { FiDollarSign } from "react-icons/fi";
 import { HiOutlineBookOpen } from "react-icons/hi";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Card = ({ course, handleSelectBtn }) => {
   const { cover_img, course_title, course_description, price, credit_hour } =
@@ -25,6 +27,7 @@ const Card = ({ course, handleSelectBtn }) => {
         >
           Select
         </button>
+        <ToastContainer />
       </div>
     </div>
   );

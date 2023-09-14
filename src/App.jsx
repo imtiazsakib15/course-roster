@@ -2,14 +2,23 @@ import { useState } from "react";
 import "./App.css";
 import Cards from "./components/Cards/Cards";
 import Cart from "./components/Cart/Cart";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [selectedCourses, setSelectedCourses] = useState([]);
 
   const handleSelectBtn = (course) => {
-    setSelectedCourses([...selectedCourses, course]);
+    const isExist = selectedCourses.find(
+      (previousCourse) => previousCourse.id === course.id
+    );
+    isExist
+      ? toast("Already Selected!!!", {
+          position: "top-center",
+        })
+      : setSelectedCourses([...selectedCourses, course]);
   };
-// console.log(selectedCourses);
+
   return (
     <div className="container mx-auto">
       <h1 className="text-3xl font-bold text-center my-12">

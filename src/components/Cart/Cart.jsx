@@ -1,7 +1,11 @@
 import PropTypes from "prop-types";
 
 const Cart = ({ selectedCourses }) => {
-  console.log(selectedCourses);
+  const totalCreditHour = selectedCourses.reduce(
+    (totalCreditHour, course) => totalCreditHour + course.credit_hour,
+    0
+  );
+  console.log(totalCreditHour);
   return (
     <div className="w-1/4 h-max bg-white p-6 rounded-xl">
       <h4 className="text-lg font-bold text-blue-500 leading-relaxed pb-4 border-b-2">
@@ -18,7 +22,7 @@ const Cart = ({ selectedCourses }) => {
         </ol>
       </div>
       <div className="border-b-2 py-6">
-        <h5 className="font-medium">Total Credit Hour : 13</h5>
+        <h5 className="font-medium">Total Credit Hour : {totalCreditHour}</h5>
       </div>
       <div className="pt-6">
         <h5 className="font-semibold">Total Price : 48000 USD</h5>

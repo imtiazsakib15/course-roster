@@ -5,7 +5,11 @@ const Cart = ({ selectedCourses }) => {
     (totalCreditHour, course) => totalCreditHour + course.credit_hour,
     0
   );
-  console.log(totalCreditHour);
+  const totalPrice = selectedCourses.reduce(
+    (totalPrice, course) => totalPrice + course.price,
+    0
+  );
+  console.log(totalPrice);
   return (
     <div className="w-1/4 h-max bg-white p-6 rounded-xl">
       <h4 className="text-lg font-bold text-blue-500 leading-relaxed pb-4 border-b-2">
@@ -25,7 +29,7 @@ const Cart = ({ selectedCourses }) => {
         <h5 className="font-medium">Total Credit Hour : {totalCreditHour}</h5>
       </div>
       <div className="pt-6">
-        <h5 className="font-semibold">Total Price : 48000 USD</h5>
+        <h5 className="font-semibold">Total Price : {totalPrice} USD</h5>
       </div>
     </div>
   );

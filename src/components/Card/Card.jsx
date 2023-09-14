@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { FiDollarSign } from "react-icons/fi";
 import { HiOutlineBookOpen } from "react-icons/hi";
 
-const Card = ({ course }) => {
+const Card = ({ course, handleSelectBtn }) => {
   const { cover_img, course_title, course_description, price, credit_hour } =
     course;
   return (
@@ -19,7 +19,10 @@ const Card = ({ course }) => {
           <HiOutlineBookOpen className="text-xl" />
           <span className="text-gray-500">Credit: {credit_hour}hr</span>
         </div>
-        <button className="w-full text-lg font-medium bg-blue-500 text-white py-2 mt-6 rounded-lg">
+        <button
+          onClick={() => handleSelectBtn(course)}
+          className="w-full text-lg font-medium bg-blue-500 text-white py-2 mt-6 rounded-lg"
+        >
           Select
         </button>
       </div>
@@ -29,6 +32,7 @@ const Card = ({ course }) => {
 
 Card.propTypes = {
   course: PropTypes.object,
+  handleSelectBtn: PropTypes.func,
 };
 
 export default Card;

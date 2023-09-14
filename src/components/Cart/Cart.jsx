@@ -1,4 +1,7 @@
-const Cart = () => {
+import PropTypes from "prop-types";
+
+const Cart = ({ selectedCourses }) => {
+  console.log(selectedCourses);
   return (
     <div className="w-1/4 h-max bg-white p-6 rounded-xl">
       <h4 className="text-lg font-bold text-blue-500 leading-relaxed pb-4 border-b-2">
@@ -6,6 +9,13 @@ const Cart = () => {
       </h4>
       <div className="border-b-2 py-6">
         <h3 className="text-xl font-bold">Course Name</h3>
+        <ol className="text-gray-500 leading-relaxed mt-5 space-y-2">
+          {selectedCourses.map((course, index) => (
+            <li key={index}>
+              {index + 1} {course.course_title}
+            </li>
+          ))}
+        </ol>
       </div>
       <div className="border-b-2 py-6">
         <h5 className="font-medium">Total Credit Hour : 13</h5>
@@ -15,6 +25,10 @@ const Cart = () => {
       </div>
     </div>
   );
+};
+
+Cart.propTypes = {
+  selectedCourses: PropTypes.array,
 };
 
 export default Cart;

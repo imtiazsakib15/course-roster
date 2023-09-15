@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Cart = ({ selectedCourses }) => {
+const Cart = ({ selectedCourses, creditHourRemaining }) => {
   const totalCreditHour = selectedCourses.reduce(
     (totalCreditHour, course) => totalCreditHour + course.credit_hour,
     0
@@ -9,11 +9,11 @@ const Cart = ({ selectedCourses }) => {
     (totalPrice, course) => totalPrice + course.price,
     0
   );
-  console.log(totalPrice);
+
   return (
     <div className="w-1/4 h-max bg-white p-6 rounded-xl">
       <h4 className="text-lg font-bold text-blue-500 leading-relaxed pb-4 border-b-2">
-        Credit Hour Remaining 7 hr
+        Credit Hour Remaining {creditHourRemaining} hr
       </h4>
       <div className="border-b-2 py-6">
         <h3 className="text-xl font-bold">Course Name</h3>
@@ -37,6 +37,7 @@ const Cart = ({ selectedCourses }) => {
 
 Cart.propTypes = {
   selectedCourses: PropTypes.array,
+  creditHourRemaining: PropTypes.number,
 };
 
 export default Cart;

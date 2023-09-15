@@ -29,12 +29,13 @@ function App() {
     setSelectedCourses([...selectedCourses, course]);
     setCreditHourRemaining(newCreditHourRemaining);
   };
+
   return (
-    <div className="container mx-auto">
-      <h1 className="text-3xl font-bold text-center my-12">
+    <div className="2xl:container mx-auto">
+      <h1 className="text-xl sm:text-3xl font-bold text-center my-12">
         Course Registration
       </h1>
-      <div className="flex gap-6 mx-5 sm:mx-8 lg:mx-10 mb-20">
+      <div className="lg:flex gap-6 mx-5 sm:mx-8 lg:mx-10 mb-20">
         <Cards handleSelectBtn={handleSelectBtn}></Cards>
         <Cart
           selectedCourses={selectedCourses}

@@ -21,7 +21,7 @@ function App() {
     }
     const newCreditHourRemaining = creditHourRemaining - course.credit_hour;
     if (newCreditHourRemaining < 0) {
-      toast("You don't have enough credit hour!!!", {
+      toast("You don't have enough credit hour remaining!!!", {
         position: "top-center",
       });
       return;

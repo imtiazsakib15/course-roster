@@ -5,7 +5,7 @@
     "course_title": "Introduction to C Programming",
     "credit_hour": 1,
     "price": 15000,
-    "course_description": "C Programming Course. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "course_description": "Dive into the essence of C Programming, covering syntax, data types, and functions, essential for coding mastery."
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "course_title": "Introduction to Algorithms",
     "credit_hour": 2,
     "price": 25000,
-    "course_description": "Algorithms Course. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "course_description": "Delve into the core concepts of Algorithms, honing problem-solving skills and algorithmic efficiency for optimized solutions."
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "course_title": "Introduction to C++ for DSA",
     "credit_hour": 10,
     "price": 10000,
-    "course_description": "C++ Course. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "course_description": "Harness the power of C++ to tackle Data Structures and Algorithms, enhancing your programming proficiency and problem-solving capabilities."
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "course_title": "Basic Data Structures",
     "credit_hour": 5,
     "price": 35000,
-    "course_description": "Basic Data Structures Course. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "course_description": "Explore the realm of Data Structures, mastering arrays, linked lists, and trees to create efficient algorithms and organized data storage."
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "course_title": "Introduction to OOP Python",
     "credit_hour": 5,
     "price": 19000,
-    "course_description": "OOP Python Course. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "course_description": "Embrace Object-Oriented Programming in Python, grasping concepts like classes, objects, and inheritance for robust software design."
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "course_title": "Software Engineering",
     "credit_hour": 2,
     "price": 23000,
-    "course_description": "Software Engineering Course. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "course_description": "Learn the principles of Software Engineering, focusing on methodologies and best practices to deliver high-quality, scalable software solutions."
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "course_title": "AWS, Cloud Computing",
     "credit_hour": 5,
     "price": 35000,
-    "course_description": "AWS, Cloud Computing Course. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "course_description": "Navigate the AWS cloud landscape, gaining expertise in Cloud Computing and leveraging AWS services for flexible and scalable applications."
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "course_title": "Database (MySQL)",
     "credit_hour": 5,
     "price": 19000,
-    "course_description": "Database (MySQL) Course. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "course_description": "Discover the intricacies of database management with MySQL, mastering schema design, querying, and optimization for efficient data handling."
   },
   {
     "id": 9,
@@ -69,6 +69,6 @@
     "course_title": "Problem-Solving Part",
     "credit_hour": 2,
     "price": 23000,
-    "course_description": "Problem-Solving Course. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "course_description": "Enhance problem-solving skills, applying diverse algorithms and data structures to tackle challenges across various domains, preparing for real-world coding scenarios."
   }
 ]
